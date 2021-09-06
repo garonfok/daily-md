@@ -5,7 +5,7 @@ import { format } from 'date-fns';
 
 const workspaces = vscode.workspace.workspaceFolders;
 const config = vscode.workspace.getConfiguration("daily-md");
-const defaultFolder = config.get("defaultNotePath");
+const defaultFolder: any = config.get("defaultNotePath");
 
 export function createLocal() {
   let today = format(new Date(), "PPP");
