@@ -2,8 +2,8 @@
   "name": "daily-md",
   "displayName": "Daily MD",
   "description": "Creates a preformatted Markdown file for daily notetaking",
-  "version": "0.1.0",
-  "publisher": "Garon Fok",
+  "version": "0.1.1",
+  "publisher": "garonfok",
   "license": "MIT",
   "engines": {
     "vscode": "^1.60.0"
