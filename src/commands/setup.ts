@@ -31,10 +31,9 @@ export function setup() {
               );
             });
           }
-        })
-        .catch((err: any) => {
-          console.error(err);
-        });
+        },(err: any) => {
+            console.error(err);
+          });
     }
   });
 }
