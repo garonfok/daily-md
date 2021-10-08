@@ -16,24 +16,25 @@ export function setup() {
         openLabel: "Select",
       });
 
-      uriSelect
-        .then((res: any) => {
+      uriSelect.then(
+        (res: any) => {
           if (res.length > 0 && res[0].fsPath) {
             const config = vscode.workspace.getConfiguration("daily-md");
-            const updateDefaultNotePath = config.update(
+            const updateDefaultPath = config.update(
               "defaultNotePath",
               path.normalize(res[0].fsPath),
               true
             );
-            updateDefaultNotePath.then(() => {
-              vscode.window.showInformationMessage(
-                "Note Path Saved."
-              );
+            updateDefaultPath.then(() => {
+              vscode.window.showInformationMessage("Note Path Saved.");
             });
           }
-        },(err: any) => {
-            console.error(err);
-          });
+        },
+        (err: any) => {
+          vscode.window.showErrorMessage("An error occurred.");
+          console.error(err);
+        }
+      );
     }
   });
 }
