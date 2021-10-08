@@ -5,6 +5,18 @@ All notable changes to the "daily-notes" extension will be documented in this fi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.6] - 2021-10-08
+
+### Fixed
+
+- Updated CHANGLOG.md
+
+## [0.1.5] - 2021-10-08
+
+### Fixed
+
+- Fixed defaultNotePath not resolving home directory
+
 ## [0.1.4] - 2021-09-06
 
 ### Fixed
