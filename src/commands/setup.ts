@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 import * as path from "path";
 
-export function setup() {
+export const setup = () => {
   const msg =
     "Welcome to Daily MD! Choose a default directory to save your notes.";
   const startOption = vscode.window.showInformationMessage(msg, ...["Start"]);
@@ -37,4 +37,4 @@ export function setup() {
       );
     }
   });
-}
+};
